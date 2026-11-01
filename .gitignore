@@ -1,0 +1,49 @@
+# --- секреты и локальная конфигурация
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+keystore.properties
+local.properties
+secrets.properties
+
+# --- данные сервера (пользовательские данные, логи, резервные копии)
+/data/
+backups/
+uploads/
+logs/
+*.log
+*.dump
+*.sql.gz
+/docs/
+README1.md
+
+# --- Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/captures/
+android/.externalNativeBuild/
+android/.cxx/
+*.apk
+*.aab
+*.iml
+.idea/
+.gradle/
+
+# --- прочее
+.DS_Store
+Thumbs.db
+*.zip
+cloudflared.exe

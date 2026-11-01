@@ -1,0 +1,24 @@
+@echo off
+chcp 65001 >nul
+setlocal
+cd /d "%~dp0.."
+if not exist ".venv\Scripts\python.exe" (
+    echo.
+    echo [ОШИБКА] Не найдено виртуальное окружение. Сначала запустите scripts\setup.bat
+    echo.
+    if not "%~1"=="--scheduled" pause
+    exit /b 1
+)
+if not exist ".env" (
+    echo.
+    echo [ОШИБКА] Нет файла .env. Запустите scripts\setup.bat - он создаст его из .env.example.
+    echo.
+    if not "%~1"=="--scheduled" pause
+    exit /b 1
+)
+pushd backend
+"..\.venv\Scripts\python.exe" -m app.cli stop
+set "RC=%ERRORLEVEL%"
+popd
+pause
+exit /b %RC%

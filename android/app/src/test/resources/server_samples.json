@@ -1,0 +1,1034 @@
+{
+ "AuthResponse": {
+  "token": "test-token-not-real",
+  "user": {
+   "id": 6,
+   "login": "dave1",
+   "display_name": "dave1",
+   "role": "user",
+   "can_review_reports": false,
+   "must_change_password": false,
+   "created_at": "2026-10-30T22:14:23.119685Z",
+   "favorite_sports": [],
+   "avatar_url": null
+  }
+ },
+ "Me": {
+  "id": 2,
+  "login": "alice1",
+  "display_name": "alice1",
+  "role": "user",
+  "can_review_reports": false,
+  "must_change_password": false,
+  "created_at": "2026-10-30T22:14:22.286833Z",
+  "favorite_sports": [],
+  "avatar_url": null
+ },
+ "Me.patch": {
+  "id": 2,
+  "login": "alice1",
+  "display_name": "Алиса",
+  "role": "user",
+  "can_review_reports": false,
+  "must_change_password": false,
+  "created_at": "2026-10-30T22:14:22.286833Z",
+  "favorite_sports": [
+   {
+    "id": 1,
+    "code": "football",
+    "name": "Футбол"
+   },
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол"
+   }
+  ],
+  "avatar_url": null
+ },
+ "SportsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "code": "football",
+    "name": "Футбол",
+    "is_active": true
+   },
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол",
+    "is_active": true
+   },
+   {
+    "id": 3,
+    "code": "volleyball",
+    "name": "Волейбол",
+    "is_active": true
+   }
+  ]
+ },
+ "UsersResponse": {
+  "items": [
+   {
+    "id": 3,
+    "login": "boris1",
+    "display_name": "boris1",
+    "avatar_url": null,
+    "favorite_sports": [],
+    "relation": "none"
+   }
+  ]
+ },
+ "UserProfile": {
+  "id": 3,
+  "login": "boris1",
+  "display_name": "boris1",
+  "avatar_url": null,
+  "favorite_sports": [],
+  "is_friend": false,
+  "blocked_by_me": false,
+  "is_self": false
+ },
+ "FriendRequestResult": {
+  "status": "pending",
+  "request_id": 1
+ },
+ "FriendRequestsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "created_at": "2026-10-30T22:14:23.174663Z",
+    "user": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    }
+   }
+  ]
+ },
+ "accept": {
+  "status": "accepted"
+ },
+ "FriendsResponse": {
+  "items": [
+   {
+    "id": 3,
+    "login": "boris1",
+    "display_name": "boris1",
+    "avatar_url": null,
+    "online": true,
+    "last_seen_at": "2026-10-30T22:14:23.189537Z",
+    "unread_messages": 0,
+    "activity": null
+   }
+  ]
+ },
+ "UserProfile.friend": {
+  "id": 3,
+  "login": "boris1",
+  "display_name": "boris1",
+  "avatar_url": null,
+  "favorite_sports": [],
+  "is_friend": true,
+  "blocked_by_me": false,
+  "is_self": false,
+  "online": true,
+  "last_seen_at": "2026-10-30T22:14:23.189537Z"
+ },
+ "VenuesResponse": {
+  "items": [
+   {
+    "id": 1,
+    "name": "Хамовники Арена",
+    "address": "Москва, ул. Лужники, 24",
+    "latitude": 55.7158,
+    "longitude": 37.5538,
+    "venue_type": "outdoor",
+    "work_hours": "08:00 - 23:00",
+    "cost_info": "Бесплатно",
+    "photo_url": null,
+    "sports": [
+     {
+      "id": 2,
+      "code": "basketball",
+      "name": "Баскетбол"
+     }
+    ],
+    "checked_in_count": 0,
+    "latest_report": null,
+    "open_games_count": 0,
+    "distance_km": 3.801,
+    "status": "active",
+    "players_estimate": 0
+   }
+  ],
+  "total": 1,
+  "limit": 200,
+  "offset": 0
+ },
+ "Venue": {
+  "id": 1,
+  "name": "Хамовники Арена",
+  "address": "Москва, ул. Лужники, 24",
+  "latitude": 55.7158,
+  "longitude": 37.5538,
+  "venue_type": "outdoor",
+  "work_hours": "08:00 - 23:00",
+  "cost_info": "Бесплатно",
+  "photo_url": null,
+  "sports": [
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол"
+   }
+  ],
+  "checked_in_count": 0,
+  "latest_report": null,
+  "open_games_count": 0,
+  "distance_km": 3.801,
+  "status": "active",
+  "description": "Открытая площадка",
+  "my_presence": {
+   "active": false,
+   "expires_at": null
+  }
+ },
+ "Venue.admincreate": {
+  "id": 2,
+  "name": "Другая",
+  "address": "Москва, ул. Лужники, 24",
+  "latitude": 56.0,
+  "longitude": 38.0,
+  "venue_type": "outdoor",
+  "work_hours": "08:00 - 23:00",
+  "cost_info": "Бесплатно",
+  "photo_url": null,
+  "sports": [
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол"
+   }
+  ],
+  "checked_in_count": 0,
+  "latest_report": null,
+  "open_games_count": 0,
+  "distance_km": null,
+  "status": "active",
+  "description": "Открытая площадка"
+ },
+ "PresenceResult": {
+  "active": true,
+  "expires_at": "2026-10-31T01:14:23.264730Z",
+  "checked_in_count": 1
+ },
+ "Venue.present": {
+  "id": 1,
+  "name": "Хамовники Арена",
+  "address": "Москва, ул. Лужники, 24",
+  "latitude": 55.7158,
+  "longitude": 37.5538,
+  "venue_type": "outdoor",
+  "work_hours": "08:00 - 23:00",
+  "cost_info": "Бесплатно",
+  "photo_url": null,
+  "sports": [
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол"
+   }
+  ],
+  "checked_in_count": 1,
+  "latest_report": null,
+  "open_games_count": 0,
+  "distance_km": null,
+  "status": "active",
+  "description": "Открытая площадка",
+  "my_presence": {
+   "active": true,
+   "expires_at": "2026-10-31T01:14:23.264730Z"
+  }
+ },
+ "PlayerReportResult": {
+  "id": 1,
+  "player_count": 5,
+  "reported_at": "2026-10-30T22:14:23.277612Z"
+ },
+ "PlayerReportsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "player_count": 5,
+    "reported_at": "2026-10-30T22:14:23.277612Z",
+    "reporter": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    }
+   }
+  ],
+  "limit": 20,
+  "offset": 0
+ },
+ "DuplicatesResponse": {
+  "duplicates": [
+   {
+    "kind": "venue",
+    "id": 1,
+    "name": "Хамовники Арена",
+    "address": "Москва, ул. Лужники, 24",
+    "distance_m": 0
+   }
+  ]
+ },
+ "UploadResult": {
+  "token": "2_8d0cbebbb1eb41d98cff1e17f11b349b",
+  "size_bytes": 657
+ },
+ "CreatedResult.sub": {
+  "id": 1,
+  "status": "pending",
+  "created_at": "2026-10-30T22:14:23.330181Z"
+ },
+ "SubmissionsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "name": "Новая",
+    "address": "Москва, ул. Лужники, 24",
+    "latitude": 57.0,
+    "longitude": 39.0,
+    "venue_type": "outdoor",
+    "description": "Открытая площадка",
+    "work_hours": "08:00 - 23:00",
+    "cost_info": "Бесплатно",
+    "photo_url": "/media/venues/8d0cbebbb1eb41d98cff1e17f11b349b.jpg",
+    "status": "pending",
+    "decision_reason": null,
+    "decided_at": null,
+    "created_at": "2026-10-30T22:14:23.330181Z",
+    "venue_id": null,
+    "sports": [],
+    "submitter": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    }
+   }
+  ]
+ },
+ "SubmissionsResponse.mod": {
+  "items": [
+   {
+    "id": 1,
+    "name": "Новая",
+    "address": "Москва, ул. Лужники, 24",
+    "latitude": 57.0,
+    "longitude": 39.0,
+    "venue_type": "outdoor",
+    "description": "Открытая площадка",
+    "work_hours": "08:00 - 23:00",
+    "cost_info": "Бесплатно",
+    "photo_url": "/media/venues/8d0cbebbb1eb41d98cff1e17f11b349b.jpg",
+    "status": "pending",
+    "decision_reason": null,
+    "decided_at": null,
+    "created_at": "2026-10-30T22:14:23.330181Z",
+    "venue_id": null,
+    "sports": [],
+    "submitter": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "duplicates": []
+   }
+  ]
+ },
+ "CreatedResult.prop": {
+  "id": 1,
+  "status": "pending",
+  "created_at": "2026-10-30T22:14:23.357606Z"
+ },
+ "ProposalsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "venue_id": 1,
+    "name": "Хамовники Арена 2",
+    "address": "Москва, ул. Лужники, 24",
+    "latitude": 55.7158,
+    "longitude": 37.5538,
+    "venue_type": "outdoor",
+    "description": "Открытая площадка",
+    "work_hours": "08:00 - 23:00",
+    "cost_info": "Бесплатно",
+    "photo_url": null,
+    "status": "pending",
+    "decision_reason": null,
+    "decided_at": null,
+    "created_at": "2026-10-30T22:14:23.357606Z",
+    "sports": [
+     {
+      "id": 2,
+      "code": "basketball",
+      "name": "Баскетбол"
+     }
+    ],
+    "proposer": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "current": {
+     "name": "Хамовники Арена",
+     "address": "Москва, ул. Лужники, 24",
+     "latitude": 55.7158,
+     "longitude": 37.5538,
+     "venue_type": "outdoor",
+     "description": "Открытая площадка",
+     "work_hours": "08:00 - 23:00",
+     "cost_info": "Бесплатно",
+     "sports": [
+      {
+       "id": 2,
+       "code": "basketball",
+       "name": "Баскетбол"
+      }
+     ],
+     "photo_url": null
+    }
+   }
+  ]
+ },
+ "ProposalsResponse.mod": {
+  "items": [
+   {
+    "id": 1,
+    "venue_id": 1,
+    "name": "Хамовники Арена 2",
+    "address": "Москва, ул. Лужники, 24",
+    "latitude": 55.7158,
+    "longitude": 37.5538,
+    "venue_type": "outdoor",
+    "description": "Открытая площадка",
+    "work_hours": "08:00 - 23:00",
+    "cost_info": "Бесплатно",
+    "photo_url": null,
+    "status": "pending",
+    "decision_reason": null,
+    "decided_at": null,
+    "created_at": "2026-10-30T22:14:23.357606Z",
+    "sports": [
+     {
+      "id": 2,
+      "code": "basketball",
+      "name": "Баскетбол"
+     }
+    ],
+    "proposer": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "current": {
+     "name": "Хамовники Арена",
+     "address": "Москва, ул. Лужники, 24",
+     "latitude": 55.7158,
+     "longitude": 37.5538,
+     "venue_type": "outdoor",
+     "description": "Открытая площадка",
+     "work_hours": "08:00 - 23:00",
+     "cost_info": "Бесплатно",
+     "sports": [
+      {
+       "id": 2,
+       "code": "basketball",
+       "name": "Баскетбол"
+      }
+     ],
+     "photo_url": null
+    }
+   }
+  ]
+ },
+ "approve": {
+  "status": "approved",
+  "venue_id": 3
+ },
+ "reject": {
+  "status": "rejected"
+ },
+ "DecisionsResponse": {
+  "items": [
+   {
+    "id": 2,
+    "kind": "venue_change",
+    "decision": "rejected",
+    "reason": "не подходит",
+    "created_at": "2026-10-30T22:14:23.398017Z",
+    "submission_id": null,
+    "proposal_id": 1,
+    "moderator": {
+     "id": 5,
+     "login": "moder1",
+     "display_name": "moder1",
+     "avatar_url": null
+    },
+    "venue_name": "Хамовники Арена 2"
+   },
+   {
+    "id": 1,
+    "kind": "venue_submission",
+    "decision": "approved",
+    "reason": null,
+    "created_at": "2026-10-30T22:14:23.385617Z",
+    "submission_id": 1,
+    "proposal_id": null,
+    "moderator": {
+     "id": 5,
+     "login": "moder1",
+     "display_name": "moder1",
+     "avatar_url": null
+    },
+    "venue_name": "Новая"
+   }
+  ]
+ },
+ "Game": {
+  "id": 1,
+  "title": "Баскет",
+  "starts_at": "2026-10-31T01:14:23.417272Z",
+  "max_players": 4,
+  "status": "open",
+  "created_at": "2026-10-30T22:14:23.420015Z",
+  "closed_at": null,
+  "venue": {
+   "id": 1,
+   "name": "Хамовники Арена",
+   "address": "Москва, ул. Лужники, 24",
+   "sports": [
+    {
+     "id": 2,
+     "code": "basketball",
+     "name": "Баскетбол"
+    }
+   ]
+  },
+  "organizer": {
+   "id": 2,
+   "login": "alice1",
+   "display_name": "Алиса",
+   "avatar_url": null
+  },
+  "participants_count": 1,
+  "free_slots": 3,
+  "joined": true,
+  "is_organizer": true,
+  "participants": [
+   {
+    "user": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "joined_at": "2026-10-30T22:14:23.420015Z",
+    "is_organizer": true
+   }
+  ]
+ },
+ "GamesResponse": {
+  "items": [
+   {
+    "id": 1,
+    "title": "Баскет",
+    "starts_at": "2026-10-31T01:14:23.417272Z",
+    "max_players": 4,
+    "status": "open",
+    "created_at": "2026-10-30T22:14:23.420015Z",
+    "closed_at": null,
+    "venue": {
+     "id": 1,
+     "name": "Хамовники Арена",
+     "address": "Москва, ул. Лужники, 24",
+     "sports": [
+      {
+       "id": 2,
+       "code": "basketball",
+       "name": "Баскетбол"
+      }
+     ]
+    },
+    "organizer": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "participants_count": 1,
+    "free_slots": 3,
+    "joined": true,
+    "is_organizer": true
+   }
+  ],
+  "limit": 50,
+  "offset": 0
+ },
+ "Game.join": {
+  "id": 1,
+  "title": "Баскет",
+  "starts_at": "2026-10-31T01:14:23.417272Z",
+  "max_players": 4,
+  "status": "open",
+  "created_at": "2026-10-30T22:14:23.420015Z",
+  "closed_at": null,
+  "venue": {
+   "id": 1,
+   "name": "Хамовники Арена",
+   "address": "Москва, ул. Лужники, 24",
+   "sports": [
+    {
+     "id": 2,
+     "code": "basketball",
+     "name": "Баскетбол"
+    }
+   ]
+  },
+  "organizer": {
+   "id": 2,
+   "login": "alice1",
+   "display_name": "Алиса",
+   "avatar_url": null
+  },
+  "participants_count": 2,
+  "free_slots": 2,
+  "joined": true,
+  "is_organizer": false,
+  "participants": [
+   {
+    "user": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "joined_at": "2026-10-30T22:14:23.420015Z",
+    "is_organizer": true
+   },
+   {
+    "user": {
+     "id": 4,
+     "login": "carol1",
+     "display_name": "carol1",
+     "avatar_url": null
+    },
+    "joined_at": "2026-10-30T22:14:23.446568Z",
+    "is_organizer": false
+   }
+  ]
+ },
+ "InviteResult": {
+  "sent": [
+   3
+  ],
+  "skipped": []
+ },
+ "Message": {
+  "id": 2,
+  "sender_id": 2,
+  "recipient_id": 3,
+  "body": "привет",
+  "created_at": "2026-10-30T22:14:23.468011Z",
+  "read_at": null,
+  "mine": true
+ },
+ "MessagesResponse": {
+  "items": [
+   {
+    "id": 1,
+    "sender_id": 2,
+    "recipient_id": 3,
+    "body": "Приглашаю на игру «Баскет» — Хамовники Арена, 31.10 04:14 (МСК).",
+    "created_at": "2026-10-30T22:14:23.457090Z",
+    "read_at": null,
+    "mine": false
+   },
+   {
+    "id": 2,
+    "sender_id": 2,
+    "recipient_id": 3,
+    "body": "привет",
+    "created_at": "2026-10-30T22:14:23.468011Z",
+    "read_at": null,
+    "mine": false
+   }
+  ],
+  "has_more": false
+ },
+ "ConversationsResponse": {
+  "items": [
+   {
+    "user": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "is_friend": true,
+    "online": true,
+    "unread": 2,
+    "last_message": {
+     "id": 2,
+     "body": "привет",
+     "created_at": "2026-10-30T22:14:23.468011Z",
+     "mine": false
+    }
+   }
+  ]
+ },
+ "NotificationsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "type": "friend_request",
+    "title": "Новый запрос в друзья",
+    "body": "Алиса (@alice1) хочет добавить вас в друзья.",
+    "ref_id": 1,
+    "created_at": "2026-10-30T22:14:23.174663Z",
+    "read_at": null
+   }
+  ],
+  "unread_count": 1
+ },
+ "UnreadCounts": {
+  "unread_count": 1,
+  "unread_messages": 2
+ },
+ "FriendsResponse.after": {
+  "items": [
+   {
+    "id": 2,
+    "login": "alice1",
+    "display_name": "Алиса",
+    "avatar_url": null,
+    "online": true,
+    "last_seen_at": "2026-10-30T22:14:23.127039Z",
+    "unread_messages": 2,
+    "activity": "Собирает состав: Баскет"
+   }
+  ]
+ },
+ "block": null,
+ "BlocksResponse": {
+  "items": [
+   {
+    "user": {
+     "id": 4,
+     "login": "carol1",
+     "display_name": "carol1",
+     "avatar_url": null
+    },
+    "created_at": "2026-10-30T22:14:23.508675Z"
+   }
+  ]
+ },
+ "CreatedResult.report": {
+  "id": 1,
+  "status": "open"
+ },
+ "CreatedResult.modreq": {
+  "id": 1,
+  "status": "pending"
+ },
+ "ModeratorRequestsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "message": "хочу",
+    "status": "pending",
+    "decision_reason": null,
+    "created_at": "2026-10-30T22:14:23.532988Z",
+    "decided_at": null
+   }
+  ]
+ },
+ "ModeratorRequestsResponse.admin": {
+  "items": [
+   {
+    "id": 1,
+    "message": "хочу",
+    "status": "pending",
+    "decision_reason": null,
+    "created_at": "2026-10-30T22:14:23.532988Z",
+    "decided_at": null,
+    "user": {
+     "id": 3,
+     "login": "boris1",
+     "display_name": "boris1",
+     "avatar_url": null
+    }
+   }
+  ]
+ },
+ "AdminUsersResponse": {
+  "items": [
+   {
+    "id": 6,
+    "login": "dave1",
+    "display_name": "dave1",
+    "avatar_url": null,
+    "role": "user",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:23.119685Z",
+    "last_seen_at": null
+   },
+   {
+    "id": 5,
+    "login": "moder1",
+    "display_name": "moder1",
+    "avatar_url": null,
+    "role": "moderator",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:22.906884Z",
+    "last_seen_at": "2026-10-30T22:14:23.348625Z"
+   },
+   {
+    "id": 4,
+    "login": "carol1",
+    "display_name": "carol1",
+    "avatar_url": null,
+    "role": "user",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:22.701290Z",
+    "last_seen_at": "2026-10-30T22:14:23.442920Z"
+   },
+   {
+    "id": 3,
+    "login": "boris1",
+    "display_name": "boris1",
+    "avatar_url": null,
+    "role": "user",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:22.478754Z",
+    "last_seen_at": "2026-10-30T22:14:23.189537Z"
+   },
+   {
+    "id": 2,
+    "login": "alice1",
+    "display_name": "Алиса",
+    "avatar_url": null,
+    "role": "user",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:22.286833Z",
+    "last_seen_at": "2026-10-30T22:14:23.127039Z"
+   },
+   {
+    "id": 1,
+    "login": "admin",
+    "display_name": "admin",
+    "avatar_url": null,
+    "role": "admin",
+    "is_active": true,
+    "can_review_reports": false,
+    "must_change_password": false,
+    "created_at": "2026-10-30T22:14:21.941490Z",
+    "last_seen_at": "2026-10-30T22:14:22.078317Z"
+   }
+  ]
+ },
+ "AdminReportsResponse": {
+  "items": [
+   {
+    "id": 1,
+    "reason": "spam",
+    "description": "x",
+    "status": "open",
+    "created_at": "2026-10-30T22:14:23.524400Z",
+    "resolved_at": null,
+    "resolution_note": null,
+    "reporter": {
+     "id": 2,
+     "login": "alice1",
+     "display_name": "Алиса",
+     "avatar_url": null
+    },
+    "target_user": {
+     "id": 4,
+     "login": "carol1",
+     "display_name": "carol1",
+     "avatar_url": null
+    },
+    "target_venue_id": null,
+    "target_venue_name": null,
+    "target_game_id": null,
+    "target_game_title": null
+   }
+  ]
+ },
+ "AuditResponse": {
+  "items": [
+   {
+    "id": 4,
+    "action": "venue_change_rejected",
+    "target_type": "venue_change_proposal",
+    "target_id": 1,
+    "details": "не подходит",
+    "created_at": "2026-10-30T22:14:23.398017Z",
+    "actor_login": "moder1"
+   },
+   {
+    "id": 3,
+    "action": "venue_submission_approved",
+    "target_type": "venue_submission",
+    "target_id": 1,
+    "details": null,
+    "created_at": "2026-10-30T22:14:23.385617Z",
+    "actor_login": "moder1"
+   },
+   {
+    "id": 2,
+    "action": "venue_created",
+    "target_type": "venue",
+    "target_id": 2,
+    "details": "Другая",
+    "created_at": "2026-10-30T22:14:23.243500Z",
+    "actor_login": "admin"
+   },
+   {
+    "id": 1,
+    "action": "venue_created",
+    "target_type": "venue",
+    "target_id": 1,
+    "details": "Хамовники Арена",
+    "created_at": "2026-10-30T22:14:22.084265Z",
+    "actor_login": "admin"
+   }
+  ]
+ },
+ "SystemStatus": {
+  "disk": {
+   "free_gb": 29.21,
+   "total_gb": 252.0
+  },
+  "warnings": [],
+  "counts": {
+   "users": 6,
+   "venues": 3,
+   "pending_submissions": 0,
+   "pending_proposals": 0,
+   "open_reports": 1,
+   "pending_moderator_requests": 1
+  }
+ },
+ "SportsResponse.admin": {
+  "items": [
+   {
+    "id": 1,
+    "code": "football",
+    "name": "Футбол",
+    "is_active": true
+   },
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол",
+    "is_active": true
+   },
+   {
+    "id": 3,
+    "code": "volleyball",
+    "name": "Волейбол",
+    "is_active": true
+   }
+  ]
+ },
+ "TempPassword": {
+  "id": 4,
+  "login": "carol1",
+  "temporary_password": "Example-Temp-Password-1"
+ },
+ "Sport.add": {
+  "id": 4,
+  "code": "s4",
+  "name": "Сквош",
+  "is_active": true
+ },
+ "SportsResponse.patch": {
+  "items": [
+   {
+    "id": 1,
+    "code": "football",
+    "name": "Футбол",
+    "is_active": true
+   },
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол",
+    "is_active": true
+   },
+   {
+    "id": 3,
+    "code": "volleyball",
+    "name": "Волейбол",
+    "is_active": true
+   },
+   {
+    "id": 4,
+    "code": "s4",
+    "name": "Сквош2",
+    "is_active": true
+   }
+  ]
+ },
+ "CreatedResult.role": {
+  "id": 3,
+  "role": "moderator"
+ },
+ "CreatedResult.archive": {
+  "id": 2,
+  "status": "archived"
+ },
+ "avatar": {
+  "id": 2,
+  "login": "alice1",
+  "display_name": "Алиса",
+  "role": "user",
+  "can_review_reports": false,
+  "must_change_password": false,
+  "created_at": "2026-10-30T22:14:22.286833Z",
+  "favorite_sports": [
+   {
+    "id": 1,
+    "code": "football",
+    "name": "Футбол"
+   },
+   {
+    "id": 2,
+    "code": "basketball",
+    "name": "Баскетбол"
+   }
+  ],
+  "avatar_url": "/media/avatars/459f10b2d07444f3b5aafb6eff42c870.jpg"
+ }
+}
